@@ -1,3 +1,4 @@
+FORKED FROM: https://github.com/yaoweibin/ngx_http_substitutions_filter_module
 nginx_substitutions_filter
     *Note: this module is not distributed with the Nginx source.
     Installation instructions can be found below.*
@@ -81,11 +82,11 @@ nginx_substitutions_filter
   Installation
     To install, get the source with subversion:
 
-    git clone git://github.com/yaoweibin/ngx_http_substitutions_filter_module.git
+    git clone git://github.com/hiphopsmurf/ngx_http_substitutions_filter_module.git
 
-    and then compile nginx with the following option:
+    and then compile nginx with the following option (add --with-compat if Nginx Plus):
 
-    ./configure --with-compat --add-dynamic-module=/root/ngx_http_substitutions_filter_module
+    ./configure --add-dynamic-module=/root/ngx_http_substitutions_filter_module
     make modules
 
   Known issue
