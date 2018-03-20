@@ -85,7 +85,6 @@ nginx_substitutions_filter
 
     and then compile nginx with the following option:
 
-    ~~./configure --add-module=/path/to/module~~
     ./configure --with-compat --add-dynamic-module=/root/ngx_http_substitutions_filter_module
     make modules
 
