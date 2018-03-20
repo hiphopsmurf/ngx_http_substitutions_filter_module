@@ -81,12 +81,13 @@ nginx_substitutions_filter
   Installation
     To install, get the source with subversion:
 
-    git clone
-    git://github.com/yaoweibin/ngx_http_substitutions_filter_module.git
+    git clone git://github.com/yaoweibin/ngx_http_substitutions_filter_module.git
 
     and then compile nginx with the following option:
 
-    ./configure --add-module=/path/to/module
+    ~~./configure --add-module=/path/to/module~~
+    ./configure --with-compat --add-dynamic-module=/root/ngx_http_substitutions_filter_module
+    make modules
 
   Known issue
     *   Can't substitute the response header.
@@ -117,7 +118,7 @@ nginx_substitutions_filter
     *   fix a segment fault bug when output chain return NGX_AGAIN.
 
     *   fix a bug about last buffer with no linefeed. This may cause segment
-        fault. Thanks for Josef Fröhle
+        fault. Thanks for Josef FrÃ¶hle
 
     Changes with nginx_substitutions_filter 0.5 2010-04-15
 
